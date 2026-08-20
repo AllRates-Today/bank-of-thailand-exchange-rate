@@ -1,0 +1,54 @@
+{
+  "name": "bank-of-thailand-exchange-rate",
+  "version": "1.2.6",
+  "description": "Official Bank of Thailand (Thailand) daily exchange rates — 48 currencies vs THB, history since 2002. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "bot",
+    "bank",
+    "of",
+    "thailand",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "thb",
+    "central-bank",
+    "official-rates",
+    "thailand",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/bot/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/bank-of-thailand-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/bank-of-thailand-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
