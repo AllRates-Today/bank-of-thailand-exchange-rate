@@ -16,7 +16,7 @@
 - 🔷 **Type-safe** — full TypeScript definitions shipped with the package
 - 🧾 **Compliance-grade metadata** — `rate_type`, publication date, and source disclaimer on every response
 
-> **Official rate, not mid-market:** every value here is a number Bank of Thailand itself published, fixed once printed and carrying the central bank's own `rate_date` — what filings and audits require. Need the live interbank midpoint for pricing or display instead? Use the [mid-market API](https://allratestoday.com/docs/) or [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk). The two can diverge by several percent.
+> **Official rate, not mid-market:** every value here is a number Bank of Thailand itself published, fixed once printed and carrying the central bank's own `rate_date` — what filings and audits require. Need the live mid-market rate for pricing or display instead? Use the [mid-market API](https://allratestoday.com/docs/) or [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk). The two can diverge by several percent.
 
 ## ⚡ Try it without a key
 
