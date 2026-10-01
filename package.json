@@ -1,6 +1,6 @@
 {
   "name": "bank-of-thailand-exchange-rate",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Official Bank of Thailand (Thailand) daily exchange rates — 48 currencies vs THB, history since 2002. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "bot",
