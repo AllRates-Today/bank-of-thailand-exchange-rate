@@ -1,0 +1,34 @@
+name: Update daily table
+
+# Refreshes the "Latest published table" section of README.md from the keyless
+# AllRatesToday endpoint. Runs twice a day because Bank of Thailand publishes in its own
+# time zone; a commit only lands when the published table actually changes.
+on:
+  schedule:
+    - cron: '40 6,18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-table
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/update-daily-table.mjs
+      - name: Commit when the table changed
+        run: |
+          if git diff --quiet -- README.md; then echo "no new table"; exit 0; fi
+          git config user.name "allratestoday-bot"
+          git config user.email "hello@allratestoday.com"
+          git add README.md
+          git commit -m "Daily table: $(grep -o 'Published \*\*[0-9-]*' README.md | head -1 | grep -o '[0-9-]*$')"
+          git push

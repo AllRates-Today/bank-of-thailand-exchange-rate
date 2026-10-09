@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-of-thailand-exchange-rate.svg)](https://github.com/AllRates-Today/bank-of-thailand-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-of-thailand-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/THB today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbot%3Fsource%3DUSD%26target%3DTHB&query=%24.rate&label=USD%2FTHB%20published%20by%20Bank%20of%20Thailand&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bot/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbot%3Fsource%3DUSD%26target%3DTHB&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bot/)
 
 **Official Bank of Thailand (Thailand) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of Thailand itself prints, every business day.**
 
@@ -32,6 +34,79 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of Thailand table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Bank of Thailand — 97 rates, first 60 shown. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | THB | buy | 9.1184 |
+| AED | THB | sell | 9.2061 |
+| AUD | THB | buy | 23.0858 |
+| AUD | THB | sell | 23.7819 |
+| BDT | THB | buy | 0.2719 |
+| BDT | THB | sell | 0.2745 |
+| BHD | THB | buy | 88.8123 |
+| BHD | THB | sell | 89.6661 |
+| BND | THB | buy | 25.9123 |
+| BND | THB | sell | 26.6745 |
+| CAD | THB | buy | 23.4684 |
+| CAD | THB | sell | 23.8178 |
+| CHF | THB | buy | 40.1423 |
+| CHF | THB | sell | 40.6532 |
+| CNY | THB | buy | 4.9783 |
+| CNY | THB | sell | 5.0622 |
+| CZK | THB | buy | 1.5357 |
+| CZK | THB | sell | 1.5505 |
+| DKK | THB | buy | 5.0114 |
+| DKK | THB | sell | 5.0756 |
+| EGP | THB | buy | 0.6395 |
+| EGP | THB | sell | 0.6457 |
+| EUR | THB | buy | 37.3443 |
+| EUR | THB | sell | 37.9702 |
+| GBP | THB | buy | 44.0519 |
+| GBP | THB | sell | 44.8213 |
+| HKD | THB | buy | 4.258 |
+| HKD | THB | sell | 4.3211 |
+| HUF | THB | buy | 0.1025 |
+| HUF | THB | sell | 0.1035 |
+| IDR | THB | buy | 0.0017929 |
+| IDR | THB | sell | 0.0019797 |
+| ILS | THB | buy | 10.9145 |
+| ILS | THB | sell | 11.0194 |
+| INR | THB | buy | 0.3223 |
+| INR | THB | sell | 0.3808 |
+| IQD | THB | buy | 0.0256 |
+| IQD | THB | sell | 0.0258 |
+| JOD | THB | buy | 47.2371 |
+| JOD | THB | sell | 47.6913 |
+| JPY | THB | buy | 0.209828 |
+| JPY | THB | sell | 0.215782 |
+| KES | THB | buy | 0.258 |
+| KES | THB | sell | 0.2605 |
+| KHR | THB | buy | 0.008247 |
+| KHR | THB | sell | 0.008326 |
+| KRW | THB | buy | 0.025 |
+| KRW | THB | sell | 0.0252 |
+| KWD | THB | buy | 108.6668 |
+| KWD | THB | sell | 109.7116 |
+| LAK | THB | buy | 0.001493 |
+| LAK | THB | sell | 0.001508 |
+| LKR | THB | buy | 0.1012 |
+| LKR | THB | sell | 0.1022 |
+| MMK | THB | buy | 0.0159 |
+| MMK | THB | sell | 0.0161 |
+| MVR | THB | buy | 2.1663 |
+| MVR | THB | sell | 2.1871 |
+| MXN | THB | buy | 1.8625 |
+| MXN | THB | sell | 1.8804 |
+
+[Full table on the Bank of Thailand rates page](https://allratestoday.com/central-bank-rates-api/bot/) · Source: [Official rates published by BOT, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bot/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
