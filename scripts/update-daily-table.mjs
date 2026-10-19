@@ -30,11 +30,14 @@ const more = rows.length > MAX_ROWS ? `, first ${MAX_ROWS} shown` : '';
 const stale = data.stale ? ' (the API currently flags this table as stale)' : '';
 const source = data.attribution?.source ?? `Official rates published by ${NAME}, served by AllRatesToday`;
 const section = [
-  `Published **${data.rate_date}** by ${NAME}${stale} — ${rows.length} rate${rows.length === 1 ? '' : 's'}${more}. Updated ${new Date().toISOString().slice(0, 10)}.`,
+  '<details>',
+  `<summary>Table as text: published ${data.rate_date} by ${NAME}${stale} — ${rows.length} rate${rows.length === 1 ? '' : 's'}${more}. Updated ${new Date().toISOString().slice(0, 10)}.</summary>`,
   '',
   '| Base | Quote | Type | Rate |',
   '| --- | --- | --- | ---: |',
   ...shown.map((r) => `| ${r.base} | ${r.quote} | ${r.type} | ${fmt(r.value)} |`),
+  '',
+  '</details>',
   '',
   `${rows.length > MAX_ROWS ? `[Full table on the ${NAME} rates page](${PAGE}) · ` : ''}Source: [${source}](${data.attribution?.url ?? PAGE}). Rates are as printed by the ${KIND}; AllRatesToday is not affiliated with it.`,
 ].join('\n');
