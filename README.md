@@ -385,6 +385,7 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
 - [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
 - [Status](https://allratestoday.com/status)
+- [Postman collection](https://allratestoday.com/postman/)
 - [GitHub](https://github.com/AllRates-Today/bank-of-thailand-exchange-rate)
 
 ## 📜 License
