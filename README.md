@@ -365,6 +365,7 @@ Need the whole archive rather than an API call? The same published tables are mi
 
 ## 🔗 Links
 
+- **Website:** [allratestoday.com](https://allratestoday.com)
 - [Bank of Thailand rates page](https://allratestoday.com/central-bank-rates-api/bot/) — live table, publication cadence, FAQ
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/bank-of-thailand-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
