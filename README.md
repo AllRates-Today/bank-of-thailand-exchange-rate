@@ -24,93 +24,78 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Bank of Thailand table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/bot?source=USD&target=THB"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/bot').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Bank of Thailand table](https://allratestoday.com/api/open/central-bank/bot/table.svg)](https://allratestoday.com/central-bank-rates-api/bot/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Bank of Thailand — 97 rates, first 60 shown. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Bank of Thailand — 97 rates, first 60 shown. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | THB | buy | 9.1407 |
-| AED | THB | sell | 9.2276 |
-| AUD | THB | buy | 23.4197 |
-| AUD | THB | sell | 24.1373 |
+| AED | THB | buy | 9.1362 |
+| AED | THB | sell | 9.2256 |
+| AUD | THB | buy | 23.3784 |
+| AUD | THB | sell | 24.0817 |
 | BDT | THB | buy | 0.2703 |
 | BDT | THB | sell | 0.2729 |
-| BHD | THB | buy | 88.9587 |
-| BHD | THB | sell | 89.8039 |
-| BND | THB | buy | 25.9735 |
-| BND | THB | sell | 26.7241 |
-| CAD | THB | buy | 23.8334 |
-| CAD | THB | sell | 24.2227 |
-| CHF | THB | buy | 40.3893 |
-| CHF | THB | sell | 40.9554 |
-| CNY | THB | buy | 5.0247 |
-| CNY | THB | sell | 5.1042 |
-| CZK | THB | buy | 1.5378 |
-| CZK | THB | sell | 1.5524 |
-| DKK | THB | buy | 5.0026 |
-| DKK | THB | sell | 5.0628 |
-| EGP | THB | buy | 0.5993 |
-| EGP | THB | sell | 0.605 |
-| EUR | THB | buy | 37.232 |
-| EUR | THB | sell | 37.8551 |
-| GBP | THB | buy | 44.5221 |
-| GBP | THB | sell | 45.2763 |
-| HKD | THB | buy | 4.2713 |
-| HKD | THB | sell | 4.3301 |
-| HUF | THB | buy | 0.102 |
-| HUF | THB | sell | 0.103 |
-| IDR | THB | buy | 0.0017639 |
-| IDR | THB | sell | 0.0019504 |
-| ILS | THB | buy | 10.7623 |
-| ILS | THB | sell | 10.8646 |
-| INR | THB | buy | 0.3358 |
-| INR | THB | sell | 0.3783 |
-| IQD | THB | buy | 0.0222 |
+| BHD | THB | buy | 88.9171 |
+| BHD | THB | sell | 89.787 |
+| BND | THB | buy | 26.0141 |
+| BND | THB | sell | 26.7653 |
+| CAD | THB | buy | 23.9298 |
+| CAD | THB | sell | 24.2978 |
+| CHF | THB | buy | 40.6606 |
+| CHF | THB | sell | 41.2367 |
+| CNY | THB | buy | 5.0205 |
+| CNY | THB | sell | 5.1124 |
+| CZK | THB | buy | 1.541 |
+| CZK | THB | sell | 1.556 |
+| DKK | THB | buy | 5.0142 |
+| DKK | THB | sell | 5.0816 |
+| EGP | THB | buy | 0.5992 |
+| EGP | THB | sell | 0.6051 |
+| EUR | THB | buy | 37.3787 |
+| EUR | THB | sell | 38.0127 |
+| GBP | THB | buy | 44.7463 |
+| GBP | THB | sell | 45.5167 |
+| HKD | THB | buy | 4.2658 |
+| HKD | THB | sell | 4.3323 |
+| HUF | THB | buy | 0.1027 |
+| HUF | THB | sell | 0.1037 |
+| IDR | THB | buy | 0.0017683 |
+| IDR | THB | sell | 0.0019532 |
+| ILS | THB | buy | 10.777 |
+| ILS | THB | sell | 10.8824 |
+| INR | THB | buy | 0.337 |
+| INR | THB | sell | 0.3777 |
+| IQD | THB | buy | 0.0221 |
 | IQD | THB | sell | 0.0224 |
-| JOD | THB | buy | 47.3526 |
-| JOD | THB | sell | 47.8025 |
-| JPY | THB | buy | 0.210688 |
-| JPY | THB | sell | 0.216586 |
-| KES | THB | buy | 0.2583 |
+| JOD | THB | buy | 47.3305 |
+| JOD | THB | sell | 47.7935 |
+| JPY | THB | buy | 0.211063 |
+| JPY | THB | sell | 0.216978 |
+| KES | THB | buy | 0.2581 |
 | KES | THB | sell | 0.2607 |
-| KHR | THB | buy | 0.008231 |
-| KHR | THB | sell | 0.008309 |
-| KRW | THB | buy | 0.025 |
+| KHR | THB | buy | 0.008227 |
+| KHR | THB | sell | 0.008307 |
+| KRW | THB | buy | 0.0251 |
 | KRW | THB | sell | 0.0253 |
-| KWD | THB | buy | 108.8619 |
-| KWD | THB | sell | 109.8962 |
+| KWD | THB | buy | 108.8463 |
+| KWD | THB | sell | 109.9111 |
 | LAK | THB | buy | 0.00149 |
 | LAK | THB | sell | 0.001504 |
-| LKR | THB | buy | 0.101 |
+| LKR | THB | buy | 0.1009 |
 | LKR | THB | sell | 0.1019 |
 | MMK | THB | buy | 0.016 |
 | MMK | THB | sell | 0.0161 |
-| MVR | THB | buy | 2.1716 |
-| MVR | THB | sell | 2.1922 |
-| MXN | THB | buy | 1.8013 |
-| MXN | THB | sell | 1.8184 |
+| MVR | THB | buy | 2.1706 |
+| MVR | THB | sell | 2.1918 |
+| MXN | THB | buy | 1.7786 |
+| MXN | THB | sell | 1.796 |
 
 </details>
 
@@ -277,6 +262,7 @@ The Bank of Thailand releases a daily table combining the weighted-average inter
 
 - Publisher's own page: [Daily foreign exchange rates](https://www.bot.or.th/en/statistics/exchange-rate.html) · [www.bot.or.th/en/home.html](https://www.bot.or.th/en/home.html)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Bank of Thailand rates page](https://allratestoday.com/central-bank-rates-api/bot/)
+- In the API: usually by **11:25 UTC** (measured over the last 8 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
