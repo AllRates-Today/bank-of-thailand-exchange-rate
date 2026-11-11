@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Refreshes the "Latest published table" section of README.md from the keyless
+// Refreshes the "Latest official table" section of README.md from the keyless
 // AllRatesToday endpoint. Idempotent: identical data produces an identical file.
 import { readFileSync, writeFileSync } from 'node:fs';
 

@@ -1,6 +1,6 @@
 name: Update daily table
 
-# Refreshes the "Latest published table" section of README.md from the keyless
+# Refreshes the "Latest official table" section of README.md from the keyless
 # AllRatesToday endpoint. Runs twice a day because Bank of Thailand publishes in its own
 # time zone; a commit only lands when the published table actually changes.
 on:
